@@ -1,6 +1,9 @@
 project(bstone CXX)
 cmake_minimum_required(VERSION 2.8)
 
+set(CMAKE_MAKE_PROGRAM /usr/bin/make)
+enable_language(CXX)
+set(CMAKE_CXX_COMPILER /usr/bin/g++)
 
 function (check_sdl_version TARGET_VERSION)
     if (NOT SDL2_INCLUDE_DIRS)
